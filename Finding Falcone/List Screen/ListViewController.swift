@@ -25,7 +25,7 @@ class ListViewController: UIViewController {
     private let planetPickersStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
-        stackView.spacing = 16
+        stackView.spacing = 12
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
@@ -47,6 +47,17 @@ class ListViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+    
+    private let resetButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Reset", for: .normal)
+        button.backgroundColor = UIColor.clear
+        button.setTitleColor(UIColor.black, for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: 18)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+
     
     var viewModel: ListViewModel
     
@@ -72,23 +83,31 @@ class ListViewController: UIViewController {
         view.addSubview(planetPickersStackView)
         view.addSubview(searchButton)
         view.addSubview(timeLabel)
+        view.addSubview(resetButton)
         
         NSLayoutConstraint.activate([
-            planetPickersStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
+            
+            resetButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            resetButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            resetButton.heightAnchor.constraint(equalToConstant: 50),
+            resetButton.leadingAnchor.constraint(greaterThanOrEqualTo: view.leadingAnchor),
+            
+            planetPickersStackView.topAnchor.constraint(equalTo: resetButton.bottomAnchor, constant: 8),
             planetPickersStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             planetPickersStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
             planetPickersStackView.bottomAnchor.constraint(greaterThanOrEqualTo: timeLabel.topAnchor, constant: 10),
             
+            timeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            timeLabel.bottomAnchor.constraint(equalTo: searchButton.topAnchor, constant: 20),
+            
             searchButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             searchButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
             searchButton.heightAnchor.constraint(equalToConstant: 50), // Adjust as needed
-            searchButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10),
-            
-            timeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            timeLabel.bottomAnchor.constraint(equalTo: searchButton.topAnchor, constant: 20)
+            searchButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10)
         ])
         
         searchButton.addTarget(self, action: #selector(searchButtonTapped(_:)), for: .touchUpInside)
+        resetButton.addTarget(self, action: #selector(resetButtonTapped(_:)), for: .touchUpInside)
     }
     
     // Configure the planet pickers
@@ -208,6 +227,10 @@ class ListViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true)
         }
+    }
+    
+    @objc private func resetButtonTapped(_ sender: UIButton) {
+        resetAll()
     }
 }
 

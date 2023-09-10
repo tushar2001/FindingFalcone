@@ -66,6 +66,68 @@
             endingLineNumber = "35"
             landmarkName = "setupViews()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FDEEABB6-1357-4607-B6AF-779FB1FFF93E - 5a1ea2e0ea58c0ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Finding_Falcone.ResultViewController.setupViews() -&gt; ()"
+                  moduleName = "Finding Falcone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/OLX/Desktop/Finding%20Falcone/Finding%20Falcone/Result%20Screen/ResultViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "105">
+               </Location>
+               <Location
+                  uuid = "FDEEABB6-1357-4607-B6AF-779FB1FFF93E - 5a1ea2e0ea58c0ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Finding_Falcone.ResultViewController.setupViews() -&gt; ()"
+                  moduleName = "Finding Falcone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/OLX/Desktop/Finding%20Falcone/Finding%20Falcone/Result%20Screen/ResultViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "210">
+               </Location>
+               <Location
+                  uuid = "FDEEABB6-1357-4607-B6AF-779FB1FFF93E - 5a1ea2e0ea58c0ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Finding_Falcone.ResultViewController.setupViews() -&gt; ()"
+                  moduleName = "Finding Falcone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/OLX/Desktop/Finding%20Falcone/Finding%20Falcone/Result%20Screen/ResultViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "123">
+               </Location>
+               <Location
+                  uuid = "FDEEABB6-1357-4607-B6AF-779FB1FFF93E - 5a1ea2e0ea58c0ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Finding_Falcone.ResultViewController.setupViews() -&gt; ()"
+                  moduleName = "Finding Falcone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/OLX/Desktop/Finding%20Falcone/Finding%20Falcone/Result%20Screen/ResultViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "228">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -78,8 +140,8 @@
             filePath = "Finding Falcone/List Screen/ListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "188"
-            endingLineNumber = "188"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
             landmarkName = "searchButtonTapped(_:)"
             landmarkType = "7">
             <Locations>
@@ -128,53 +190,50 @@
                   endingLineNumber = "189"
                   offsetFromSymbolStart = "230">
                </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "32BCE14A-64CB-4027-99F1-872A631590D9"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Finding Falcone/List Screen/ListViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "searchFalcone(completion:)"
-            landmarkType = "7">
-            <Locations>
                <Location
-                  uuid = "32BCE14A-64CB-4027-99F1-872A631590D9 - 4588deae22180867"
+                  uuid = "DB235CA5-3EE5-4D5A-833E-9C79E67F1725 - 4b934414d875bebf"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Finding_Falcone.ListViewModel.searchFalcone(completion: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  symbolName = "Finding_Falcone.ListViewController.searchButtonTapped(__C.UIButton) -&gt; ()"
                   moduleName = "Finding Falcone"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/OLX/Desktop/Finding%20Falcone/Finding%20Falcone/List%20Screen/ListViewModel.swift"
+                  urlString = "file:///Users/OLX/Desktop/Finding%20Falcone/Finding%20Falcone/List%20Screen/ListViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "78"
-                  endingLineNumber = "78"
-                  offsetFromSymbolStart = "196">
+                  startingLineNumber = "207"
+                  endingLineNumber = "207"
+                  offsetFromSymbolStart = "152">
                </Location>
                <Location
-                  uuid = "32BCE14A-64CB-4027-99F1-872A631590D9 - c33de29616f1a254"
+                  uuid = "DB235CA5-3EE5-4D5A-833E-9C79E67F1725 - 6fc28d7d74ff29f6"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in Finding_Falcone.ListViewModel.searchFalcone(completion: (Swift.Bool) -&gt; ()) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Bool) -&gt; () in Finding_Falcone.ListViewController.searchButtonTapped(__C.UIButton) -&gt; ()"
                   moduleName = "Finding Falcone"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/OLX/Desktop/Finding%20Falcone/Finding%20Falcone/List%20Screen/ListViewModel.swift"
+                  urlString = "file:///Users/OLX/Desktop/Finding%20Falcone/Finding%20Falcone/List%20Screen/ListViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "79"
-                  endingLineNumber = "79"
-                  offsetFromSymbolStart = "114">
+                  startingLineNumber = "207"
+                  endingLineNumber = "207"
+                  offsetFromSymbolStart = "230">
+               </Location>
+               <Location
+                  uuid = "DB235CA5-3EE5-4D5A-833E-9C79E67F1725 - 4b934414d875bebf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Finding_Falcone.ListViewController.searchButtonTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "Finding Falcone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/OLX/Desktop/Finding%20Falcone/Finding%20Falcone/List%20Screen/ListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "207"
+                  endingLineNumber = "207"
+                  offsetFromSymbolStart = "188">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -189,8 +248,8 @@
             filePath = "Finding Falcone/List Screen/ListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "191"
-            endingLineNumber = "191"
+            startingLineNumber = "210"
+            endingLineNumber = "210"
             landmarkName = "searchButtonTapped(_:)"
             landmarkType = "7">
             <Locations>
@@ -223,6 +282,84 @@
                   startingLineNumber = "192"
                   endingLineNumber = "192"
                   offsetFromSymbolStart = "377">
+               </Location>
+               <Location
+                  uuid = "93F93A8C-3835-4BB7-B449-D14006DB42AF - 6fc28d7d74ff2e5b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool) -&gt; () in Finding_Falcone.ListViewController.searchButtonTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "Finding Falcone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/OLX/Desktop/Finding%20Falcone/Finding%20Falcone/List%20Screen/ListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "210"
+                  endingLineNumber = "210"
+                  offsetFromSymbolStart = "377">
+               </Location>
+               <Location
+                  uuid = "93F93A8C-3835-4BB7-B449-D14006DB42AF - 6fc28d7d74ff2e5b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool) -&gt; () in Finding_Falcone.ListViewController.searchButtonTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "Finding Falcone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/OLX/Desktop/Finding%20Falcone/Finding%20Falcone/List%20Screen/ListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "210"
+                  endingLineNumber = "210"
+                  offsetFromSymbolStart = "431">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E487E4F7-515D-4508-9073-1DC0C93F0DF7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Finding FalconeTests/Tests/ListViewModelTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "testResetAll()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E487E4F7-515D-4508-9073-1DC0C93F0DF7 - 6c8375df575ce539"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Finding_FalconeTests.ListViewModelTests.testResetAll() -&gt; ()"
+                  moduleName = "Finding FalconeTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/OLX/Desktop/Finding%20Falcone/Finding%20FalconeTests/Tests/ListViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "1754">
+               </Location>
+               <Location
+                  uuid = "E487E4F7-515D-4508-9073-1DC0C93F0DF7 - 28162a8583938ad2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Finding_Falcone.Planet&gt;) -&gt; Swift.Bool in implicit closure #1 () throws -&gt; Swift.Optional&lt;Any&gt; in Finding_FalconeTests.ListViewModelTests.testResetAll() -&gt; ()"
+                  moduleName = "Finding FalconeTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/OLX/Desktop/Finding%20Falcone/Finding%20FalconeTests/Tests/ListViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "59">
                </Location>
             </Locations>
          </BreakpointContent>

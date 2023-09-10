@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "8DBD7820-7DBB-40D0-811B-65AC9ACBBFA5",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Finding Falcone.xcodeproj",
+        "identifier" : "338379252AA7AB240031710C",
+        "name" : "Finding FalconeTests"
+      }
+    }
+  ],
+  "version" : 1
+}

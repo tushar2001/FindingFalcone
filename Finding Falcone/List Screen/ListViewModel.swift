@@ -25,15 +25,9 @@ class ListViewModel {
         currentVehicleCount = vehicles.deepCopy()
     }
     
-    func selectPlanet(_ planet: Planet) {
-        if !selectedPlanets.contains(planet) {
-            selectedPlanets.append(planet)
-        }
-    }
-    
     // check if 4 planets are selected
     func isSearchReady() -> Bool {
-        return selectedPlanets.compactMap{ $0 }.count == 4 && vehicles.compactMap{ $0 }.count == 4
+        return selectedPlanets.compactMap{ $0 }.count == 4 && selectedVehicles.compactMap{ $0 }.count == 4
     }
     
     func updateSelectedVehicleCount(_ vehicleName: String, increment: Bool) {

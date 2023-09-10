@@ -12,15 +12,15 @@
 		3347E4B52AACA2B6001E9A41 /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3347E4B42AACA2B6001E9A41 /* ResultViewModel.swift */; };
 		3347E4B92AACFFB1001E9A41 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3347E4B82AACFFB1001E9A41 /* Api.swift */; };
 		3347E4BB2AAD16B5001E9A41 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3347E4BA2AAD16B5001E9A41 /* NetworkHelper.swift */; };
+		3347E4BF2AADD406001E9A41 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3347E4BE2AADD406001E9A41 /* HomeViewModelTests.swift */; };
+		337DDBC42AADFD4D003DFC07 /* ListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337DDBC32AADFD4D003DFC07 /* ListViewModelTests.swift */; };
+		337DDBC62AAE0AF2003DFC07 /* ResultViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337DDBC52AAE0AF2003DFC07 /* ResultViewModelTests.swift */; };
 		338379142AA7AB200031710C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338379132AA7AB200031710C /* AppDelegate.swift */; };
 		338379162AA7AB200031710C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338379152AA7AB200031710C /* SceneDelegate.swift */; };
 		338379182AA7AB200031710C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338379172AA7AB200031710C /* ListViewController.swift */; };
 		3383791B2AA7AB200031710C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338379192AA7AB200031710C /* Main.storyboard */; };
 		3383791D2AA7AB240031710C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3383791C2AA7AB240031710C /* Assets.xcassets */; };
 		338379202AA7AB240031710C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3383791E2AA7AB240031710C /* LaunchScreen.storyboard */; };
-		3383792B2AA7AB250031710C /* Finding_FalconeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3383792A2AA7AB250031710C /* Finding_FalconeTests.swift */; };
-		338379352AA7AB250031710C /* Finding_FalconeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338379342AA7AB250031710C /* Finding_FalconeUITests.swift */; };
-		338379372AA7AB250031710C /* Finding_FalconeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338379362AA7AB250031710C /* Finding_FalconeUITestsLaunchTests.swift */; };
 		338379442AA7B0C50031710C /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338379432AA7B0C50031710C /* ListViewModel.swift */; };
 		338379462AA7B10A0031710C /* FalconModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338379452AA7B10A0031710C /* FalconModel.swift */; };
 		338379482AA7B17D0031710C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338379472AA7B17D0031710C /* ResultViewController.swift */; };
@@ -28,13 +28,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		338379272AA7AB240031710C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 338379082AA7AB200031710C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3383790F2AA7AB200031710C;
-			remoteInfo = "Finding Falcone";
-		};
-		338379312AA7AB250031710C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 338379082AA7AB200031710C /* Project object */;
 			proxyType = 1;
@@ -49,6 +42,10 @@
 		3347E4B42AACA2B6001E9A41 /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
 		3347E4B82AACFFB1001E9A41 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		3347E4BA2AAD16B5001E9A41 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		3347E4BE2AADD406001E9A41 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		3347E4C42AADF02C001E9A41 /* Finding FalconeTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Finding FalconeTests.xctestplan"; path = "Finding Falcone/Finding FalconeTests.xctestplan"; sourceTree = SOURCE_ROOT; };
+		337DDBC32AADFD4D003DFC07 /* ListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModelTests.swift; sourceTree = "<group>"; };
+		337DDBC52AAE0AF2003DFC07 /* ResultViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModelTests.swift; sourceTree = "<group>"; };
 		338379102AA7AB200031710C /* Finding Falcone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Finding Falcone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		338379132AA7AB200031710C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		338379152AA7AB200031710C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,10 +55,6 @@
 		3383791F2AA7AB240031710C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		338379212AA7AB240031710C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		338379262AA7AB240031710C /* Finding FalconeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Finding FalconeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3383792A2AA7AB250031710C /* Finding_FalconeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finding_FalconeTests.swift; sourceTree = "<group>"; };
-		338379302AA7AB250031710C /* Finding FalconeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Finding FalconeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		338379342AA7AB250031710C /* Finding_FalconeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finding_FalconeUITests.swift; sourceTree = "<group>"; };
-		338379362AA7AB250031710C /* Finding_FalconeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finding_FalconeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		338379432AA7B0C50031710C /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		338379452AA7B10A0031710C /* FalconModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FalconModel.swift; sourceTree = "<group>"; };
 		338379472AA7B17D0031710C /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
@@ -76,13 +69,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		338379232AA7AB240031710C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3383792D2AA7AB250031710C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -136,12 +122,22 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		3347E4C02AADD978001E9A41 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3347E4BE2AADD406001E9A41 /* HomeViewModelTests.swift */,
+				337DDBC32AADFD4D003DFC07 /* ListViewModelTests.swift */,
+				337DDBC52AAE0AF2003DFC07 /* ResultViewModelTests.swift */,
+				3347E4C42AADF02C001E9A41 /* Finding FalconeTests.xctestplan */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		338379072AA7AB200031710C = {
 			isa = PBXGroup;
 			children = (
 				338379122AA7AB200031710C /* Finding Falcone */,
 				338379292AA7AB250031710C /* Finding FalconeTests */,
-				338379332AA7AB250031710C /* Finding FalconeUITests */,
 				338379112AA7AB200031710C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -151,7 +147,6 @@
 			children = (
 				338379102AA7AB200031710C /* Finding Falcone.app */,
 				338379262AA7AB240031710C /* Finding FalconeTests.xctest */,
-				338379302AA7AB250031710C /* Finding FalconeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,18 +172,9 @@
 		338379292AA7AB250031710C /* Finding FalconeTests */ = {
 			isa = PBXGroup;
 			children = (
-				3383792A2AA7AB250031710C /* Finding_FalconeTests.swift */,
+				3347E4C02AADD978001E9A41 /* Tests */,
 			);
 			path = "Finding FalconeTests";
-			sourceTree = "<group>";
-		};
-		338379332AA7AB250031710C /* Finding FalconeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				338379342AA7AB250031710C /* Finding_FalconeUITests.swift */,
-				338379362AA7AB250031710C /* Finding_FalconeUITestsLaunchTests.swift */,
-			);
-			path = "Finding FalconeUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,24 +215,6 @@
 			productReference = 338379262AA7AB240031710C /* Finding FalconeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3383792F2AA7AB250031710C /* Finding FalconeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 338379402AA7AB250031710C /* Build configuration list for PBXNativeTarget "Finding FalconeUITests" */;
-			buildPhases = (
-				3383792C2AA7AB250031710C /* Sources */,
-				3383792D2AA7AB250031710C /* Frameworks */,
-				3383792E2AA7AB250031710C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				338379322AA7AB250031710C /* PBXTargetDependency */,
-			);
-			name = "Finding FalconeUITests";
-			productName = "Finding FalconeUITests";
-			productReference = 338379302AA7AB250031710C /* Finding FalconeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -261,10 +229,6 @@
 						CreatedOnToolsVersion = 14.3.1;
 					};
 					338379252AA7AB240031710C = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = 3383790F2AA7AB200031710C;
-					};
-					3383792F2AA7AB250031710C = {
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = 3383790F2AA7AB200031710C;
 					};
@@ -285,7 +249,6 @@
 			targets = (
 				3383790F2AA7AB200031710C /* Finding Falcone */,
 				338379252AA7AB240031710C /* Finding FalconeTests */,
-				3383792F2AA7AB250031710C /* Finding FalconeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -302,13 +265,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		338379242AA7AB240031710C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3383792E2AA7AB250031710C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -340,16 +296,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3383792B2AA7AB250031710C /* Finding_FalconeTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3383792C2AA7AB250031710C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				338379352AA7AB250031710C /* Finding_FalconeUITests.swift in Sources */,
-				338379372AA7AB250031710C /* Finding_FalconeUITestsLaunchTests.swift in Sources */,
+				3347E4BF2AADD406001E9A41 /* HomeViewModelTests.swift in Sources */,
+				337DDBC62AAE0AF2003DFC07 /* ResultViewModelTests.swift in Sources */,
+				337DDBC42AADFD4D003DFC07 /* ListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,11 +309,6 @@
 			isa = PBXTargetDependency;
 			target = 3383790F2AA7AB200031710C /* Finding Falcone */;
 			targetProxy = 338379272AA7AB240031710C /* PBXContainerItemProxy */;
-		};
-		338379322AA7AB250031710C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3383790F2AA7AB200031710C /* Finding Falcone */;
-			targetProxy = 338379312AA7AB250031710C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -517,6 +461,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -545,6 +490,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -567,7 +513,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7LFV3JLDVR;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.first-ios.Finding-FalconeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -587,7 +533,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7LFV3JLDVR;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.first-ios.Finding-FalconeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -595,42 +541,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Finding Falcone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Finding Falcone";
-			};
-			name = Release;
-		};
-		338379412AA7AB250031710C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7LFV3JLDVR;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.first-ios.Finding-FalconeUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Finding Falcone";
-			};
-			name = Debug;
-		};
-		338379422AA7AB250031710C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7LFV3JLDVR;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.first-ios.Finding-FalconeUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Finding Falcone";
 			};
 			name = Release;
 		};
@@ -660,15 +570,6 @@
 			buildConfigurations = (
 				3383793E2AA7AB250031710C /* Debug */,
 				3383793F2AA7AB250031710C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		338379402AA7AB250031710C /* Build configuration list for PBXNativeTarget "Finding FalconeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				338379412AA7AB250031710C /* Debug */,
-				338379422AA7AB250031710C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
