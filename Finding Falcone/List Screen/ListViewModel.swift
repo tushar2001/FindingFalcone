@@ -30,6 +30,7 @@ class ListViewModel {
         return selectedPlanets.compactMap{ $0 }.count == 4 && selectedVehicles.compactMap{ $0 }.count == 4
     }
     
+    // Method to update the available vehicle count if user select or update the vehicle
     func updateSelectedVehicleCount(_ vehicleName: String, increment: Bool) {
         for index in 0..<currentVehicleCount.count {
             if currentVehicleCount[index].name == vehicleName {
@@ -43,7 +44,7 @@ class ListViewModel {
         }
     }
     
-    // Method to calculate the estimated search time based on selected planets and vehicles
+    // To calculate the estimated search time based on selected planets and vehicles
     func calculateSearchTime() -> Int {
         var time: Int = 0
         for (index, planet) in selectedPlanets.enumerated() {
@@ -62,6 +63,7 @@ class ListViewModel {
         return time
     }
     
+    // Method to call token and search api for search result
     func searchFalcone(completion: @escaping (Bool) -> Void) {
         DispatchQueue.main.async {
             self.updateToken{ [weak self] success in
@@ -93,6 +95,7 @@ class ListViewModel {
         }
     }
     
+    // Method to get the token from token api.
     func updateToken(completion: @escaping (Bool) -> Void) {
         Api.getToken { result in
             switch result {
@@ -108,6 +111,7 @@ class ListViewModel {
 }
 
 extension ListViewModel {
+    // Method to reset all data
     func resetAll() {
         selectedPlanets = [nil, nil, nil, nil]
         selectedVehicles = [nil, nil, nil, nil]

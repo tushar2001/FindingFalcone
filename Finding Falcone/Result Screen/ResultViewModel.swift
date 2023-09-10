@@ -13,7 +13,7 @@ protocol StartOverDelegate: AnyObject {
 
 class ResultViewModel {
     
-    // A property to store the result of the search
+    // Property to store the result of search
     var result: FindFalconeResponse
     var delegate: StartOverDelegate?
     
@@ -21,7 +21,7 @@ class ResultViewModel {
         self.result = result
     }
     
-    // A function to reset the data and start over
+    // To reset the data on start over click
     func startOver() {
         delegate?.resetAll()
     }

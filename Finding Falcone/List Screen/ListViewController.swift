@@ -7,20 +7,15 @@
 
 import UIKit
 
-struct PickerText {
+// MARK:  Struct to associate PickerView with TextField
+struct PickerTextField {
     var picker: UIPickerView
     var textfield: UITextField
 }
 
-struct CurrentVehicleDetail {
-    var name: String
-    var count: Int
-    let range: Int
-}
-
 class ListViewController: UIViewController {
     
-    private var pickerViewToTextField: [Int: PickerText] = [:]
+    private var indexPickerTextFieldMap: [Int: PickerTextField] = [:]
     
     private let planetPickersStackView: UIStackView = {
         let stackView = UIStackView()
@@ -79,6 +74,7 @@ class ListViewController: UIViewController {
         configurePlanetPickers()
     }
     
+    // MARK: Set up the UI elements and their constraints
     private func setupUI() {
         view.addSubview(planetPickersStackView)
         view.addSubview(searchButton)
@@ -110,7 +106,7 @@ class ListViewController: UIViewController {
         resetButton.addTarget(self, action: #selector(resetButtonTapped(_:)), for: .touchUpInside)
     }
     
-    // Configure the planet pickers
+    // MARK: Configure the planet pickers
     private func configurePlanetPickers() {
         for (index) in 0..<4 {
             let titleLabel = createTitleLabel(forIndex: index)
@@ -122,6 +118,7 @@ class ListViewController: UIViewController {
         }
     }
     
+    // MARK: Create label to represent Destination index
     private func createTitleLabel(forIndex: Int) -> UILabel {
         let titleLabel = UILabel()
         titleLabel.text = "Destination \(forIndex + 1)"
@@ -133,7 +130,7 @@ class ListViewController: UIViewController {
         return titleLabel
     }
     
-    // Create a planet picker
+    // MARK: Create textField and picker for planet picker
     private func createPlanetPicker(forIndex: Int) -> UITextField {
         let textField = UITextField()
         let picker = UIPickerView()
@@ -151,11 +148,12 @@ class ListViewController: UIViewController {
         picker.tag = forIndex
         picker.accessibilityIdentifier = "Planet Picker"
         
-        pickerViewToTextField[forIndex] = PickerText(picker: picker, textfield: textField)
+        indexPickerTextFieldMap[forIndex] = PickerTextField(picker: picker, textfield: textField)
         
         return textField
     }
     
+    // MARK: Create textField and picker for vehicle picker
     private func createVehiclePicker(forIndex: Int) -> UITextField {
         let textField = UITextField()
         let picker = UIPickerView()
@@ -176,11 +174,12 @@ class ListViewController: UIViewController {
         
         textField.addTarget(self, action:#selector(vehicleTextFieldTap), for: .editingDidBegin)
         
-        pickerViewToTextField[forIndex + 10] = PickerText(picker: picker, textfield: textField)
+        indexPickerTextFieldMap[forIndex + 10] = PickerTextField(picker: picker, textfield: textField)
         
         return textField
     }
     
+    // MARK: Handle tap confiuration of vehicle textfield
     @objc private func vehicleTextFieldTap(sender: UITextField) {
         let textField = sender
         
@@ -200,7 +199,7 @@ class ListViewController: UIViewController {
         }
         
     }
-    
+     // MARK: Handle tap configuration of search button
     @objc private func searchButtonTapped(_ sender: UIButton) {
         if viewModel.isSearchReady() {
             updateSearchTime()
@@ -229,6 +228,7 @@ class ListViewController: UIViewController {
         }
     }
     
+    // MARK: Handle tap configuration of reset button
     @objc private func resetButtonTapped(_ sender: UIButton) {
         resetAll()
     }
@@ -240,19 +240,20 @@ extension ListViewController: UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        // Row count for vehicle picker
         if pickerView.tag >= 10 {
-            // This is a vehicle picker
             let selectedPlanetIndex = pickerView.tag - 10
             let selectedPlanet = viewModel.selectedPlanets[selectedPlanetIndex]!
             
-            // Filter available vehicles by range and count eligibility
+            // Filter eligible vehicles by range and count eligibility
             let eligibleVehicles = viewModel.currentVehicleCount.filter { vehicle in
                 return vehicle.range >= selectedPlanet.distance && vehicle.count > 0
             }
             
             return eligibleVehicles.count
-        } else {
-            // This is a planet picker
+        }
+        // Row count for planet picker
+        else {
             let selectedPlanets = viewModel.selectedPlanets.compactMap { $0 }
             let availablePlanets = viewModel.planets.filter { !selectedPlanets.contains($0) }
             return availablePlanets.count
@@ -262,19 +263,20 @@ extension ListViewController: UIPickerViewDataSource {
 
 extension ListViewController: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        // Title for Row for vehicle picker
         if pickerView.tag >= 10 {
-            // This is a vehicle picker
             let selectedPlanetIndex = pickerView.tag - 10
             let selectedPlanet = viewModel.selectedPlanets[selectedPlanetIndex]!
             
-            // Filter available vehicles by range and count eligibility
+            // Filter eligible vehicles by range and count eligibility
             let eligibleVehicles = viewModel.currentVehicleCount.filter { vehicle in
                 return vehicle.range >= selectedPlanet.distance && vehicle.count > 0
             }
             
             return "\(eligibleVehicles[row].name) (\(eligibleVehicles[row].count))"
-        } else {
-            // This is a planet picker
+        }
+        // Title for row for planet picker
+        else {
             let selectedPlanets = viewModel.selectedPlanets.compactMap { $0 }
             let availablePlanets = viewModel.planets.filter { !selectedPlanets.contains($0) }
             return availablePlanets[row].name
@@ -282,9 +284,12 @@ extension ListViewController: UIPickerViewDelegate {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        // For vehicle picker
         if pickerView.tag >= 10 {
             handleVehiclePickerSelection(pickerView, row: row)
-        } else {
+        }
+        // For planet picker
+        else {
             handlePlanetPickerSelection(pickerView, row: row)
         }
         dismissKeyboard(forPicker: pickerView)
@@ -325,19 +330,19 @@ extension ListViewController: UIPickerViewDelegate {
     }
     
     private func updateTextField(forPicker pickerView: UIPickerView, withValue value: String) {
-        if let textField = pickerViewToTextField[pickerView.tag]?.textfield {
+        if let textField = indexPickerTextFieldMap[pickerView.tag]?.textfield {
             textField.text = value
         }
     }
     
     private func enableAssociatedVehicleTextField(_ pickerView: UIPickerView) {
-        if let vehicleTextField = pickerViewToTextField[pickerView.tag + 10]?.textfield {
+        if let vehicleTextField = indexPickerTextFieldMap[pickerView.tag + 10]?.textfield {
             vehicleTextField.isEnabled = true
         }
     }
     
     private func dismissKeyboard(forPicker pickerView: UIPickerView) {
-        if let textField = pickerViewToTextField[pickerView.tag]?.textfield {
+        if let textField = indexPickerTextFieldMap[pickerView.tag]?.textfield {
             textField.resignFirstResponder()
         }
     }
@@ -351,7 +356,7 @@ extension ListViewController: UIPickerViewDelegate {
 extension ListViewController: StartOverDelegate {
     func resetAll() {
         viewModel.resetAll()
-        for field in pickerViewToTextField.values {
+        for field in indexPickerTextFieldMap.values {
             let textfield = field.textfield
             textfield.text = ""
             if textfield.tag >= 10 {

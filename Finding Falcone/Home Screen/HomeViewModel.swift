@@ -12,6 +12,7 @@ class HomeViewModel {
     var planetData: [Planet]?
     var vehicleData: [Vehicle]?
     
+    // To fetch planet and vehicle data
     func fetchData() {
         Api.fetchPlanetData { [weak self] planets in
             guard let weakSelf = self else { return }

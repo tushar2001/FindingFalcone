@@ -10,7 +10,8 @@ import Foundation
 import UIKit
 
 class HomeViewController: UIViewController {
-    private let messageLabel: UILabel = {
+    // label for App Name on launch or home screen
+    private let titleLabel: UILabel = {
         let label = UILabel()
         label.text = "Finding Falcon"
         label.textAlignment = .center
@@ -28,15 +29,18 @@ class HomeViewController: UIViewController {
         startCountdown()
     }
 
+    // MARK: Set up the UI elements and their constraints
     private func setupUI() {
-        view.addSubview(messageLabel)
+        view.addSubview(titleLabel)
 
         NSLayoutConstraint.activate([
-            messageLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            messageLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            titleLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
     }
 
+    
+    // MARK: Start countdown to transition to the list controller
     private func startCountdown() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [weak self] in
             guard let weakSelf = self else { return }
@@ -44,8 +48,10 @@ class HomeViewController: UIViewController {
         }
     }
 
+    // Present ListController
     private func transitionToListController() {
-        let listViewController = ListViewController(viewModel: ListViewModel(planetsData: viewModel.planetData ?? [], vehicleData: viewModel.vehicleData ?? []))
+        let listViewModel = ListViewModel(planetsData: viewModel.planetData ?? [], vehicleData: viewModel.vehicleData ?? [])
+        let listViewController = ListViewController(viewModel: listViewModel)
         let navController = UINavigationController(rootViewController: listViewController)
         navController.modalPresentationStyle = .fullScreen
         self.present(navController, animated: true)
